@@ -1,0 +1,29 @@
+{
+  "name": "devburger-api",
+  "version": "1.0.0",
+  "description": "Devburger-api",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/7sgn/DevBurger.git"
+  },
+  "author": "Marlon Sette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/7sgn/DevBurger/issues"
+  },
+  "homepage": "https://github.com/7sgn/DevBurger#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7",
+    "sucrase": "^3.35.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0"
+  }
+}
