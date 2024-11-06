@@ -45,3 +45,20 @@ module.exports = {
     
   }
 };
+
+/*
+  Cousers
+
+  id
+  name
+  duration
+
+
+
+  relacionamentos
+
+  1:1   uma matricula para um usuario
+  1:n   um produto pode ter uma categoria mas a categoria pode ter mais de um produto  
+  n:n   um usuario pode ter varios cursos e um curso pode ter varios usuários
+
+*/

@@ -1,5 +1,6 @@
 import express from 'express'
 import  routes  from './Routes'
+import { resolve } from 'node:path'
 
 import './database/index'
 
@@ -14,6 +15,7 @@ class App {
 
     middleware(){
         this.app.use(express.json())
+        this.app.use('/product-file', express.static(resolve(__dirname, '..', 'uploads')))
     }
 
     Routes(){
