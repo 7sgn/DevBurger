@@ -19,7 +19,7 @@ class CategoryController {
 
         const { name } = request.body;
 
-        const categoryExists = await Category.findAll({
+        const categoryExists = await Category.findOne({
             where: {
                 name
             }
