@@ -1,11 +1,38 @@
+import { Container, LeftContainer, RightContainer, Title, Form, InputContainer, Button } from './styles'
+import Logo from '../../assets/Logo.svg'
+
+
 function Login() {
 
     return (
-        <div>
-        <h1>
-            Login
-        </h1>
-        </div>
+       <Container>
+        <LeftContainer>
+            <img src={Logo} alt='logo-devburger'/>
+        </LeftContainer>
+        <RightContainer>
+            <Title>
+                Olá, seja bem vindo ao <span>Dev Burguer!</span> 
+                <br />
+                Acesse com seu <span>Login e senha</span>.
+            </Title>
+            <Form>
+                <InputContainer>
+                    <label>Email</label>
+                    <input type='email'/>
+                </InputContainer>
+
+                <InputContainer>
+                    <label>Senha</label>
+                    <input type='password'/>
+                </InputContainer>
+                <a>Esqueci minha senha</a>
+                <Button>Entrar</Button>
+            </Form>
+            <p>
+                Não possui conta? <a>Clique aqui</a>
+            </p>
+        </RightContainer>
+       </Container>
     )
 }
 
