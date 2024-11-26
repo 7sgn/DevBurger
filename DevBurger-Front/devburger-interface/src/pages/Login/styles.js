@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import BackgroundLogin from '../../assets/bg.svg'
 import Background from '../../assets/Padrao.svg'
 
+
 export const Container = styled.div`
     display: flex;
     width: 100vw;
@@ -45,7 +46,6 @@ export const RightContainer = styled.div`
         font-size: 18px;
         font-weight: 800;
         a{
-            cursor: pointer;
             color: #9758a6;
         }
     }
@@ -58,6 +58,7 @@ export const Title = styled.h2`
   font-size: 40px;
   color: #fff;
   span{
+    font-family: "Road Rage", sans-serif;
     color: #9758a6;
   }      
 
@@ -75,7 +76,7 @@ export const Form = styled.form`
         font-size: 16px;
         font-weight: 400;
         color: #fff;
-        cursor: pointer;
+        
 
     }
 `
@@ -86,29 +87,28 @@ flex-direction: column;
 gap: 5px;
 width: 100%;
 
-input {
+    input {
     width: 100%;
     border: none;
     height: 52px;
     border-radius: 5px;
     padding: 0 16px;
-}
+    }
 
-label {
+    label {
     font-size: 18px;
     font-weight: 600;
     color: #fff;
-}
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 80%;
+        color: #cf3057;
+        font-weight: 600;
+        height: 10px;
+
+    }
+
 `
 
-export const Button = styled.button`
-    width: 100%;
-    height: 52px;
-    border-radius: 5px;
-    padding: 0 16px;
-    color: #fff;
-    background-color: #9758a6 ;
-    font-weight: 400;
-    font-size: 18px;
-    border: none;
-`
