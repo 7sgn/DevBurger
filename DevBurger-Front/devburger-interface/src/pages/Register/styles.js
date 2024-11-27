@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import BackgroundLogin from '../../assets/bg.svg'
 import Background from '../../assets/Padrao.svg'
+
 import { Link as ReactLink } from 'react-router-dom'
 
 
@@ -57,12 +58,7 @@ export const Title = styled.h2`
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
-  color: #fff;
-  span{
-    font-family: "Road Rage", sans-serif;
-    color: #9758a6;
-  }      
-
+  color: #9758a6;     
 `
 
 export const Form = styled.form`
@@ -117,4 +113,5 @@ export const Link = styled(ReactLink)`
     text-decoration: none;
     color: #fff;
 `
+
 
