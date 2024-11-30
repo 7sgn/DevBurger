@@ -8,6 +8,16 @@ export const Container = styled.div`
     }
 
     padding-left: 40px;
+
+    .react-multiple-carousel__arrow--left {
+        left: 15px;
+        top: 10px;
+    }
+
+    .react-multiple-carousel__arrow--right {
+        top: 10px;
+    }
+
 `
 
 export const Title = styled.h2`
@@ -17,7 +27,7 @@ export const Title = styled.h2`
     padding-bottom: 12px;
     position: relative;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 40px 0;
 
     &::after {
         content: '';
@@ -25,7 +35,7 @@ export const Title = styled.h2`
         bottom: 0;
         left: calc(50% - 28px);
         width: 56px;
-        height: 4px;
+        height: 3px;
         background-color:  #9758a6;
         
 
@@ -39,6 +49,8 @@ export const ContainerItems = styled.div`
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    cursor: grab;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     display: flex;
     align-items: center;
